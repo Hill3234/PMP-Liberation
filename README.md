@@ -1,12 +1,12 @@
 <p align="center">
-    <img src="https://www.killahpotatoes.de/images/arma/liberation.png" width="100">
+    <img src="https://www.killahpotatoes.de/images/arma/liberation.png" width="500">
 </p>
 <p align="center">
-    <a href="https://github.com/Dubjunk/PMP-Public-MilSim-Project-Liberation/blob/master/LICENSE">
-        <img src="https://img.shields.io/github/license/Dubjunk/PMP-Public-MilSim-Project-Liberation.svg?style=flat-square" alt="License: MIT">
+    <a href="https://github.com/KillahPotatoes/PMP-Liberation/blob/master/LICENSE">
+        <img src="https://img.shields.io/github/license/KillahPotatoes/PMP-Liberation.svg?style=flat-square" alt="License: MIT">
     </a>
-    <a href="https://github.com/Dubjunk/PMP-Public-MilSim-Project-Liberation/issues">
-        <img src="https://img.shields.io/github/issues-raw/Dubjunk/PMP-Public-MilSim-Project-Liberation.svg?style=flat-square" alt="GitHub issues">
+    <a href="https://github.com/KillahPotatoes/PMP-Liberation/issues">
+        <img src="https://img.shields.io/github/issues-raw/KillahPotatoes/PMP-Liberation.svg?style=flat-square" alt="GitHub issues">
     </a>
 </p>
 
@@ -65,6 +65,5 @@ The area has fallen to the enemy, and it is up to you to take it back. Embark on
     * [RHSUSAF](http://steamcommunity.com/sharedfiles/filedetails/?id=843577117)
     * [RHSUSAF ACE compat](http://steamcommunity.com/sharedfiles/filedetails/?id=773125288)
 * Optionale Mods
-	* [ARES](https://steamcommunity.com/sharedfiles/filedetails/?id=421908020)
     * [DynaSound 2](http://steamcommunity.com/sharedfiles/filedetails/?id=825181638)
     * [Enhanced Movement](http://steamcommunity.com/sharedfiles/filedetails/?id=333310405)
