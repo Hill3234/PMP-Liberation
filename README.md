@@ -2,11 +2,11 @@
     <img src="https://www.killahpotatoes.de/images/arma/liberation.png" width="100">
 </p>
 <p align="center">
-    <a href="https://github.com/Dubjunk/A3MC-Liberation/blob/master/LICENSE">
-        <img src="https://img.shields.io/github/license/Dubjunk/A3MC-Liberation.svg?style=flat-square" alt="License: MIT">
+    <a href="https://github.com/Dubjunk/PMP-Public-MilSim-Project-Liberation/blob/master/LICENSE">
+        <img src="https://img.shields.io/github/license/Dubjunk/PMP-Public-MilSim-Project-Liberation.svg?style=flat-square" alt="License: MIT">
     </a>
-    <a href="https://github.com/Dubjunk/A3MC-Liberation/issues">
-        <img src="https://img.shields.io/github/issues-raw/Dubjunk/A3MC-Liberation.svg?style=flat-square" alt="GitHub issues">
+    <a href="https://github.com/Dubjunk/PMP-Public-MilSim-Project-Liberation/issues">
+        <img src="https://img.shields.io/github/issues-raw/Dubjunk/PMP-Public-MilSim-Project-Liberation.svg?style=flat-square" alt="GitHub issues">
     </a>
 </p>
 
@@ -39,7 +39,7 @@ The area has fallen to the enemy, and it is up to you to take it back. Embark on
 
 ## Public Server
 
-### [GER] ArmA3 MilSim - Public Server
+### [GER] Public MilSim Project Server
 
 * IP: 213.133.110.170
 * Port: 2322
@@ -65,27 +65,6 @@ The area has fallen to the enemy, and it is up to you to take it back. Embark on
     * [RHSUSAF](http://steamcommunity.com/sharedfiles/filedetails/?id=843577117)
     * [RHSUSAF ACE compat](http://steamcommunity.com/sharedfiles/filedetails/?id=773125288)
 * Optionale Mods
-    * [DynaSound 2](http://steamcommunity.com/sharedfiles/filedetails/?id=825181638)
-    * [Enhanced Movement](http://steamcommunity.com/sharedfiles/filedetails/?id=333310405)
-
-### Zurzeit nicht in Betrieb:
-### [GER] ArmA3 MilSim Community - Public Server #2
-
-* IP: 213.133.110.170
-* Port: 2342
-* Benötigte Mods:
-    * [ACE3](http://steamcommunity.com/sharedfiles/filedetails/?id=463939057)
-    * [ACRE2](http://steamcommunity.com/sharedfiles/filedetails/?id=751965892)
-    * [ADV ACE CPR](http://steamcommunity.com/sharedfiles/filedetails/?id=1104460924)
-    * [BWMod](http://steamcommunity.com/sharedfiles/filedetails/?id=1200127537)
-    * [BWMod ACE Compat](http://steamcommunity.com/sharedfiles/filedetails/?id=1200145989)
-    * [CBA A3](http://steamcommunity.com/sharedfiles/filedetails/?id=450814997)
-    * [Military Gear Pack](http://steamcommunity.com/sharedfiles/filedetails/?id=736829758)
-    * [Redd'n'Tank Vehicles](http://steamcommunity.com/sharedfiles/filedetails/?id=1128145626)
-    * [RHSAFRF](http://steamcommunity.com/sharedfiles/filedetails/?id=843425103)
-    * [RHSAFRF ACE Compat](http://steamcommunity.com/sharedfiles/filedetails/?id=773131200)
-    * [RHSUSAF](http://steamcommunity.com/sharedfiles/filedetails/?id=843577117)
-    * [RHSUSAF ACE compat](http://steamcommunity.com/sharedfiles/filedetails/?id=773125288)
-* Optionale Mods
+	* [ARES](https://steamcommunity.com/sharedfiles/filedetails/?id=421908020)
     * [DynaSound 2](http://steamcommunity.com/sharedfiles/filedetails/?id=825181638)
     * [Enhanced Movement](http://steamcommunity.com/sharedfiles/filedetails/?id=333310405)
