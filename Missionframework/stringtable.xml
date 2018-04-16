@@ -2616,7 +2616,7 @@
 		<Key ID="STR_PERMISSION_NO_AIR">
 			<Original>You don't have permission from the commander to use air vehicles.</Original>
 			<French>Vous n'avez pas la permission du commandant pour utiliser les véhicules aériens.</French>
-			<German>Du hast keine Rechte zur Nutzung von Luftfahrzeugen</German>
+			<German>Du hast keine Rechte zur Nutzung von Luftfahrzeugen oder besetzt den falschen Slot.</German>
 			<Spanish>No tienes permiso del comandante para usar vehículos aéreos</Spanish>
 			<Russian>У тебя нет разрешения от командира использовать авиацию.</Russian>
 			<Italian>Non hai il permesso di usare veivoli</Italian>
@@ -4065,6 +4065,16 @@
 			<Turkish>Killah Potatoes bayrağı</Turkish>
 			<Portuguese>Bandeira da Killah Potatoes</Portuguese>
 		</Key>
+		<Key ID="STR_INDIV_BILLBOARD_F_TS">
+			<Original>Radio Overview</Original>
+			<German>Funk Übersicht</German>
+			<Spanish>Radio Overview</Spanish>
+			<Russian>Radio Overview</Russian>
+			<Italian>Radio Overview</Italian>
+			<Chinesesimp>Radio Overview</Chinesesimp>
+			<Turkish>Radio Overview</Turkish>
+			<Portuguese>Radio Overview</Portuguese>
+ 		</Key>
 		<Key ID="STR_SMALL_STORAGE">
 			<Original>Small storage area</Original>
 			<German>Kleiner Lagerbereich</German>
@@ -6136,6 +6146,10 @@
 			<Chinese>== 昏迷甦醒選項 ==</Chinese>
 			<Turkish>== CANLANDIRMA AYARLARI ==</Turkish>
 			<Portuguese>== OPÇÕES DE RESSUCITAÇÃO ==</Portuguese>
+		</Key>
+		<Key ID="STR_SLOT_NOT_AUTHORIZED">
+			<Original>You are not authorized to use this slot on the server.</Original>
+			<German>Du bist auf diesem Server nicht für diesen Slot autorisiert.</German>
 		</Key>
 	</Package>
 </Project>

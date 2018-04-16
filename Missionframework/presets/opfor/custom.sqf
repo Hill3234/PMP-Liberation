@@ -1,41 +1,44 @@
 /*
 Needed Mods:
-- None
+- RHS USAF
+- RHS AFRF
+- RHS GREF
+- RHS SAF
 
 Optional Mods:
 - None
 */
 
 // Enemy infantry classes
-opfor_officer = "O_officer_F";											//Officer
-opfor_squad_leader = "O_Soldier_SL_F";									//Squad Leader
-opfor_team_leader = "O_Soldier_TL_F";									//Team Leader
-opfor_sentry = "O_Soldier_lite_F";										//Rifleman (Lite)
-opfor_rifleman = "O_Soldier_F";											//Rifleman
-opfor_rpg = "O_Soldier_LAT_F";											//Rifleman (LAT)
-opfor_grenadier = "O_Soldier_GL_F";										//Grenadier
-opfor_machinegunner = "O_Soldier_AR_F";									//Autorifleman
-opfor_heavygunner = "O_HeavyGunner_F";									//Heavy Gunner
-opfor_marksman = "O_soldier_M_F";										//Marksman
-opfor_sharpshooter = "O_Sharpshooter_F";								//Sharpshooter
-opfor_sniper = "O_sniper_F";											//Sniper
-opfor_at = "O_Soldier_AT_F";											//AT Specialist
-opfor_aa = "O_Soldier_AA_F";											//AA Specialist
-opfor_medic = "O_medic_F";												//Combat Life Saver
-opfor_engineer = "O_engineer_F";										//Engineer
-opfor_paratrooper = "O_soldier_PG_F";									//Paratrooper
+opfor_officer = "I_officer_F";										//Lieutenant (Officer)		FGN_AAF_Inf_PlatoonLeader
+opfor_squad_leader = "I_Soldier_SL_F";								//Sergeant (Squad Leader)	FGN_AAF_Inf_SectionLeader
+opfor_team_leader = "I_Soldier_TL_F";								//Corporal (Team Leader)	FGN_AAF_Inf_AssSectionLeader
+opfor_sentry = "FGN_AAF_Inf_Rifleman";								//Rifleman (Lite)
+opfor_rifleman = "FGN_AAF_Inf_Rifleman";							//Rifleman
+opfor_rpg = "FGN_AAF_Inf_RiflemanAT";								//Rifleman LAT (AT4)
+opfor_grenadier = "FGN_AAF_Inf_RiflemanPBG40";						//Rifleman Grenadier (PBG40)
+opfor_machinegunner = "FGN_AAF_Inf_SAWGunner";						//Autorifleman (M249)
+opfor_heavygunner = "FGN_AAF_Inf_MachineGunner";					//Heavy Gunner (PKM)
+opfor_marksman = "FGN_AAF_Inf_Marksman";							//Marksman (SVDM)
+opfor_sharpshooter = "FGN_AAF_Inf_Marksman";						//Sharpshooter (SVDM)
+opfor_sniper = "FGN_AAF_Inf_Sniper";								//Sniper (M24)
+opfor_at = "FGN_AAF_Inf_ATOperator";								//AT Specialist (Carl Gustaf)
+opfor_aa = "FGN_AAF_Inf_AAOperator";								//AA Specialist (Igla)
+opfor_medic = "FGN_AAF_Inf_Medic";									//Combat Life Saver
+opfor_engineer = "FGN_AAF_Inf_Engineer";							//Engineer
+opfor_paratrooper = "FGN_AAF_Inf_Rifleman";							//Paratrooper
 
 // Enemy vehicles used by secondary objectives.
-opfor_mrap = "O_MRAP_02_F";												//Ifrit
-opfor_mrap_armed = "O_MRAP_02_hmg_F";									//Ifrit (HMG)
-opfor_transport_helo = "O_Heli_Transport_04_bench_F";					//Mi-290 Taru (Bench)
-opfor_transport_truck = "O_Truck_03_covered_F";							//Tempest Transport (Covered)
-opfor_ammobox_transport = "O_Truck_03_transport_F";						//Tempest Transport (Open) -> Has to be able to transport resource crates!
-opfor_fuel_truck = "O_Truck_03_fuel_F";									//Tempest Fuel
-opfor_ammo_truck = "O_Truck_03_ammo_F";									//Tempest Ammo
-opfor_fuel_container = "Land_Pod_Heli_Transport_04_fuel_F";				//Taru Fuel Pod
-opfor_ammo_container = "Land_Pod_Heli_Transport_04_ammo_F";				//Taru Ammo Pod
-opfor_flag = "Flag_CSAT_F";												//CSAT Flag
+opfor_mrap = "FGN_AAF_Tigr";										//GAZ-233011
+opfor_mrap_armed = "FGN_AAF_Tigr_STS";								//GAZ-233014 (Armed)
+opfor_transport_helo = "rhsgref_cdf_reg_Mi8amt";					//Mi-8AMT
+opfor_transport_truck = "FGN_AAF_Ural";								//Ural-4320 Transport (Covered)
+opfor_ammobox_transport = "FGN_AAF_Ural_open";						//Ural-4320 Transport (Open) -> Has to be able to transport resource crates!
+opfor_fuel_truck = "FGN_AAF_Zamak_Fuel";							//Zamak Fuel
+opfor_ammo_truck = "FGN_AAF_Zamak_Ammo";							//Zamak Ammo
+opfor_fuel_container = "B_Slingload_01_Fuel_F";						//Huron Fuel Container
+opfor_ammo_container = "B_Slingload_01_Ammo_F";						//Huron Ammo Container
+opfor_flag = "Flag_AAF_F";											//AAF Flag
 
 /* Adding a value to these arrays below will add them to a one out of however many in the array, random pick chance.
 Therefore, adding the same value twice or three times means they are more likely to be chosen more often. */
@@ -43,100 +46,103 @@ Therefore, adding the same value twice or three times means they are more likely
 /* Militia infantry. Lightweight soldier classnames the game will pick from randomly as sector defenders.
 Think of them like garrison or military police forces, which are more meant to control the local population instead of fighting enemy armies. */
 militia_squad = [
-	"O_soldierU_F",														//Rifleman (Lite)
-	"O_soldierU_F",														//Rifleman (Lite)
-	"O_soldierU_F",														//Rifleman
-	"O_soldierU_F",														//Rifleman
-	"O_soldierU_LAT_F",													//Rifleman (AT)
-	"O_soldierU_AR_F",													//Autorifleman
-	"O_soldierU_M_F",													//Marksman
-	"O_soldierU_medic_F",												//Medic
-	"O_engineer_U_F"													//Engineer
+	"FGN_AAF_Inf_Officer",												//Rifleman
+	"FGN_AAF_Inf_Rifleman",												//Rifleman
+	"FGN_AAF_InfRes_Rifleman",											//Rifleman
+	"FGN_AAF_InfRes_Rifleman",											//Rifleman
+	"FGN_AAF_InfRes_RiflemanGarrison",									//Rifleman (Garrison)
+	"FGN_AAF_InfRes_RiflemanGarrison",									//Rifleman (Garrison)
+	"FGN_AAF_Inf_RiflemanAT",											//Rifleman (AT Grenade)
+	"FGN_AAF_InfRes_Marksman",											//Marksman
+	"FGN_AAF_InfRes_Medic",												//Medic
+	"FGN_AAF_InfRes_Engineer"											//Engineer
 ];
 
 // Militia vehicles. Lightweight vehicle classnames the game will pick from randomly as sector defenders.
 militia_vehicles = [
-	"O_LSV_02_armed_F"													//Qilin (armed)
+	"FGN_AAF_Reserve_M1025_M2",											//Humvee (HMG)
+	"FGN_AAF_Reserve_M1025_MK19"										//Humvee (GMG)
 ];
 
 // All enemy vehicles that can spawn as sector defenders and patrols at high enemy combat readiness (aggression levels).
 opfor_vehicles = [
-	"O_MRAP_02_hmg_F",													//Ifrit (HMG)
-	"O_MRAP_02_hmg_F",													//Ifrit (GMG)
-	"O_MRAP_02_gmg_F",													//Ifrit (GMG)
-	"O_LSV_02_AT_F",													//Qilin (AT)
-	"O_APC_Tracked_02_cannon_F",										//BTR-K Kamysh
-	"O_APC_Tracked_02_cannon_F",										//BTR-K Kamysh
-	"O_APC_Tracked_02_AA_F",											//ZSU-39 Tigris
-	"O_APC_Tracked_02_AA_F",											//ZSU-39 Tigris
-	"O_MBT_02_cannon_F",												//T-100 Varsuk
-	"O_MBT_02_cannon_F",												//T-100 Varsuk
-	"O_MBT_04_cannon_F",												//T-140 Angara
-	"O_MBT_04_command_F"												//T-140K Angara
+	"FGN_AAF_M1025_M2",													//Humvee (HMG)
+	"FGN_AAF_M1025_MK19",												//Humvee (GMG)
+	"FGN_AAF_Tigr_STS",													//GAZ-233014 (Armed)
+	"rhsgref_BRDM2",													//BRDM-2
+	"rhsgref_cdf_btr70",												//BTR-70
+	"rhsgref_cdf_zsu234",												//ZSU-23-4V
+	"rhsgref_cdf_bmd2k",												//BMD-2K
+	"FGN_AAF_BMP3M_ERA",												//BMP-3 (Vesna)
+	"rhsgref_cdf_t80bv_tv",												//T-80BV
+	"rhsgref_cdf_t72ba_tv",												//T-72B (obr. 1984g.)
+	"rhsgref_cdf_t72bb_tv"												//T-72B (obr. 1985g.)
 ];
 
 // All enemy vehicles that can spawn as sector defenders and patrols but at a lower enemy combat readiness (aggression levels).
 opfor_vehicles_low_intensity = [
-	"O_MRAP_02_hmg_F",													//Ifrit (HMG)
-	"O_MRAP_02_hmg_F",													//Ifrit (HMG)
-	"O_LSV_02_AT_F",													//Qilin (AT)
-	"O_APC_Wheeled_02_rcws_F",											//MSE-3 Marid 
-	"O_APC_Tracked_02_cannon_F"											//BTR-K Kamysh
+	"FGN_AAF_M1025_M2",													//Humvee (HMG)
+	"FGN_AAF_M1025_M2",													//Humvee (HMG)
+	"FGN_AAF_Tigr_STS",													//GAZ-233014 (Armed)
+	"rhsgref_BRDM2",													//BRDM-2
+	"rhsgref_cdf_btr60",												//BTR-60PB
+	"rhsgref_cdf_bmd1"													//BMD-1
 ];
 
 // All enemy vehicles that can spawn as battlegroups, either assaulting or as reinforcements, at high enemy combat readiness (aggression levels).
 opfor_battlegroup_vehicles = [
-	"O_MRAP_02_hmg_F",													//Ifrit (HMG)
-	"O_MRAP_02_gmg_F",													//Ifrit (GMG)
-	"O_MRAP_02_gmg_F",													//Ifrit (GMG)
-	"O_LSV_02_AT_F",													//Qilin (AT)
-	"O_Truck_03_transport_F",											//Tempest Transport
-	"O_Truck_03_covered_F",												//Tempest Transport (Covered)
-	"O_APC_Tracked_02_cannon_F",										//BTR-K Kamysh
-	"O_APC_Tracked_02_cannon_F",										//BTR-K Kamysh
-	"O_APC_Tracked_02_AA_F",											//ZSU-39 Tigris
-	"O_APC_Tracked_02_AA_F",											//ZSU-39 Tigris
-	"O_MBT_02_cannon_F",												//T-100 Varsuk
-	"O_MBT_02_cannon_F",												//T-100 Varsuk
-	"O_MBT_04_cannon_F",												//T-140 Angara
-	"O_MBT_04_command_F",												//T-140K Angara
-	"O_Heli_Light_02_dynamicLoadout_F",									//Po-30 Orca (Armed)
-	"O_Heli_Light_02_dynamicLoadout_F",									//Po-30 Orca (Armed)
-	"O_Heli_Transport_04_bench_F",										//Mi-290 Taru (Bench)
-	"O_Heli_Attack_02_dynamicLoadout_F"									//Mi-48 Kajman
+	"FGN_AAF_M1025_M2",													//Humvee (HMG)
+	"FGN_AAF_M1025_MK19",												//Humvee (GMG)
+	"FGN_AAF_Tigr_STS",													//GAZ-233014 (Armed)
+	"FGN_AAF_Ural_open",												//Ural-4320 Transport (Open)
+	"FGN_AAF_Ural",														//Ural-4320 Transport (Covered)
+	"rhsgref_cdf_bmd2k",												//BMD-2K
+	"rhsgref_BRDM2",													//BRDM-2
+	"rhsgref_cdf_btr70",												//BTR-70
+	"rhsgref_cdf_zsu234",												//ZSU-23-4V
+	"FGN_AAF_BMP3M_ERA",												//BMP-3 (Vesna)
+	"rhsgref_cdf_t80b_tv",												//T-80B
+	"rhsgref_cdf_t80bv_tv",												//T-80BV
+	"rhsgref_cdf_t72ba_tv",												//T-72B (obr. 1984g.)
+	"rhsgref_cdf_t72bb_tv",												//T-72B (obr. 1985g.)
+	"rhsgref_cdf_reg_Mi8amt",											//Mi-8AMT
+	"FGN_AAF_KA60_unarmed",												//Kamov Ka-60 (unarmed)
+	"FGN_AAF_KA60_dynamicLoadout"										//Kamov Ka-60
 ];
 
 // All enemy vehicles that can spawn as battlegroups, either assaulting or as reinforcements, at lower enemy combat readiness (aggression levels).
 opfor_battlegroup_vehicles_low_intensity = [
-	"O_MRAP_02_hmg_F",													//Ifrit (HMG)
-	"O_MRAP_02_hmg_F",													//Ifrit (HMG)
-	"O_Truck_03_transport_F",											//Tempest Transport
-	"O_APC_Wheeled_02_rcws_F",											//MSE-3 Marid 
-	"O_APC_Tracked_02_cannon_F",										//BTR-K Kamysh
-	"O_APC_Tracked_02_AA_F",											//ZSU-39 Tigris
-	"O_Heli_Light_02_dynamicLoadout_F",									//Po-30 Orca (Armed)
-	"O_Heli_Transport_04_bench_F"										//Mi-290 Taru (Bench)
+	"FGN_AAF_M1025_M2",													//Humvee (HMG)
+	"FGN_AAF_M1025_M2",													//Humvee (HMG)
+	"FGN_AAF_Ural",														//Ural-4320 Transport (Covered)
+	"rhsgref_cdf_btr70",												//BTR-70
+	"rhsgref_cdf_bmd2k",												//BMD-2K
+	"rhsgref_cdf_zsu234",												//ZSU-23-4V
+	"FGN_AAF_KA60_unarmed",												//Kamov Ka-60 (unarmed)
+	"rhsgref_cdf_reg_Mi8amt"											//Mi-8AMT
 ];
 
 /* All vehicles that spawn within battlegroups (see the above 2 arrays) and also hold 8 soldiers as passengers.
 If something in this array can't hold all 8 soldiers then buggy behaviours may occur.	*/
 opfor_troup_transports = [
-	"O_Truck_03_transport_F",											//Tempest Transport
-	"O_Truck_03_covered_F",												//Tempest Transport (Covered)
-	"O_APC_Wheeled_02_rcws_F",											//MSE-3 Marid 
-	"O_Heli_Transport_04_bench_F",										//Mi-290 Taru (Bench)
-	"O_Heli_Light_02_dynamicLoadout_F"									//Po-30 Orca (Armed)
+	"FGN_AAF_Ural_open",												//Ural-4320 Transport (Open)
+	"FGN_AAF_Ural",														//Ural-4320 Transport (Covered)
+	//"rhsgref_BRDM2",													//BRDM-2
+	//"rhsgref_cdf_btr70",												//BTR-70
+	"rhsgref_cdf_reg_Mi8amt",											//Mi-8AMT
+	"FGN_AAF_KA60_unarmed",												//Kamov Ka-60 (unarmed)
+	"FGN_AAF_KA60_dynamicLoadout"										//Kamov Ka-60
 ];
 
 // Enemy rotary-wings that will need to spawn in flight.
 opfor_choppers = [
-	"O_Heli_Transport_04_bench_F",										//Mi-290 Taru (Bench)
-	"O_Heli_Light_02_dynamicLoadout_F",									//Po-30 Orca (Armed)
-	"O_Heli_Attack_02_dynamicLoadout_F"									//Mi-48 Kajman
+	"rhsgref_cdf_reg_Mi8amt",											//Mi-8AMT
+	"FGN_AAF_KA60_unarmed",												//Kamov Ka-60 (unarmed)
+	"FGN_AAF_KA60_dynamicLoadout"										//Kamov Ka-60
 ];
 
 // Enemy fixed-wings that will need to spawn in the air.
 opfor_air = [
-	"O_Plane_CAS_02_dynamicLoadout_F",									//To-199 Neophron (CAS)
-	"O_Plane_Fighter_02_F"												//To-201 Shikra
+	"FGN_AAF_L159_dynamicLoadout",										//L-159 Alca
+	"rhs_l39_cdf"														//L-39C Albatros
 ];

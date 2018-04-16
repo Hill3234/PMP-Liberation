@@ -21,6 +21,7 @@ private _distarsenal = 5;
 private _distbuildfob = 10;
 private _distspawn = 10;
 private _distredeploy = 20;
+private _haloPlayers = 20;
 
 GRLIB_removefobboxes = false;
 KP_liberation_resources_global = false;
@@ -68,7 +69,7 @@ while {true} do {
 		};
 	};
 
-	if ((_fobdistance < _distredeploy || (player distance startbase) < 200) && alive player && vehicle player == player && GRLIB_halo_param > 0) then {
+	if ((_fobdistance < _distredeploy || (player distance startbase) < 200) && alive player && vehicle player == player && GRLIB_halo_param > 0 && ((count (allPlayers - entities "HeadlessClient_F")) < _haloPlayers)) then {
 		if (_idact_halo == -1) then {
 			_idact_halo = player addAction ["<t color='#80FF80'>" + localize "STR_HALO_ACTION" + "</t> <img size='2' image='res\ui_redeploy.paa'/>","scripts\client\spawn\do_halo.sqf","",-749,false,true,"","build_confirmed == 0"];
 		};
@@ -112,7 +113,8 @@ while {true} do {
 		};
 	};
 
-	if (_fobdistance < _distfob && alive player && vehicle player == player && (([ player, 3] call F_fetchPermission) || (player == ([] call F_getCommander) || [] call F_isAdmin))) then {
+	// Bau von FOB Gebäuden und Fahrzeugen nur durch Spieler auf Pionierslot, Commander oder Admin
+	if (_fobdistance < _distfob && alive player && vehicle player == player && (((str player) in KPLIB_rightConstruct) || (player == ([] call F_getCommander)) || ([] call F_isAdmin))) then {
 		if (_idact_build == -1) then {
 			_idact_build = player addAction ["<t color='#FFFF00'>" + localize "STR_BUILD_ACTION" + "</t> <img size='2' image='res\ui_build.paa'/>","scripts\client\build\open_build_menu.sqf","",-985,false,true,"","build_confirmed == 0"];
 		};
@@ -156,8 +158,9 @@ while {true} do {
 		};
 	};
 
+	// Bau von Sektorlager und Produktionseinrichtungen nur durch Spieler auf Pionierslot, Commander oder Admin
 	if ((count _prod_sector) == 12) then {
-		if (alive player && vehicle player == player && ([player, 3] call F_fetchPermission) && ((count (_prod_sector select 3)) == 0)) then {
+		if (alive player && vehicle player == player && (((str player) in KPLIB_rightConstruct) || (player == ([] call F_getCommander)) || ([] call F_isAdmin)) && ((count (_prod_sector select 3)) == 0)) then {
 			if (_idact_sectorstorage == -1) then {
 				_idact_sectorstorage = player addAction ["<t color='#FFFF00'>" + localize "STR_SECSTORAGEBUILD_ACTION" + "</t>","scripts\client\build\do_sector_build.sqf",[KP_liberation_small_storage_building, _prod_sector],-993,false,true,"","build_confirmed == 0"];
 			};
@@ -167,7 +170,7 @@ while {true} do {
 				_idact_sectorstorage = -1;
 			};
 		};
-		if (alive player && vehicle player == player && ([player, 3] call F_fetchPermission) && ((count (_prod_sector select 3)) == 3) && !(_prod_sector select 4)) then {
+		if (alive player && vehicle player == player && (((str player) in KPLIB_rightConstruct) || (player == ([] call F_getCommander)) || ([] call F_isAdmin)) && ((count (_prod_sector select 3)) == 3) && !(_prod_sector select 4)) then {
 			if (_idact_supplyfacility == -1) then {
 				_idact_supplyfacility = player addAction ["<t color='#FFFF00'>" + localize "STR_SECSUPPLYBUILD_ACTION" + "</t>","scripts\client\build\do_sector_build.sqf",["supply", _prod_sector],-994,false,true,"","build_confirmed == 0"];
 			};
@@ -177,7 +180,7 @@ while {true} do {
 				_idact_supplyfacility = -1;
 			};
 		};
-		if (alive player && vehicle player == player && ([player, 3] call F_fetchPermission) && ((count (_prod_sector select 3)) == 3) && !(_prod_sector select 5)) then {
+		if (alive player && vehicle player == player && (((str player) in KPLIB_rightConstruct) || (player == ([] call F_getCommander)) || ([] call F_isAdmin)) && ((count (_prod_sector select 3)) == 3) && !(_prod_sector select 5)) then {
 			if (_idact_ammofacility == -1) then {
 				_idact_ammofacility = player addAction ["<t color='#FFFF00'>" + localize "STR_SECAMMOBUILD_ACTION" + "</t>","scripts\client\build\do_sector_build.sqf",["ammo", _prod_sector],-995,false,true,"","build_confirmed == 0"];
 			};
@@ -187,7 +190,7 @@ while {true} do {
 				_idact_ammofacility = -1;
 			};
 		};
-		if (alive player && vehicle player == player && ([player, 3] call F_fetchPermission) && ((count (_prod_sector select 3)) == 3) && !(_prod_sector select 6)) then {
+		if (alive player && vehicle player == player && (((str player) in KPLIB_rightConstruct) || (player == ([] call F_getCommander)) || ([] call F_isAdmin)) && ((count (_prod_sector select 3)) == 3) && !(_prod_sector select 6)) then {
 			if (_idact_fuelfacility == -1) then {
 				_idact_fuelfacility = player addAction ["<t color='#FFFF00'>" + localize "STR_SECFUELBUILD_ACTION" + "</t>","scripts\client\build\do_sector_build.sqf",["fuel", _prod_sector],-996,false,true,"","build_confirmed == 0"];
 			};
@@ -227,7 +230,7 @@ while {true} do {
 		};
 	};
 
-	if (((_fobdistance < _distfob) || ((count _prod_sector) == 12)) && (player == ([] call F_getCommander) || [] call F_isAdmin) && alive player && vehicle player == player && ((count KP_liberation_production) > 0)) then {
+	if (((_fobdistance < _distfob) || ((count _prod_sector) == 12)) && ((player == ([] call F_getCommander)) || ([] call F_isAdmin) || ((str player) == "logistic1") || ((str player) == "logistic2") || ((str player) == "logistic3") || ((str player) == "logistic4")) && alive player && vehicle player == player && ((count KP_liberation_production) > 0)) then {
 		if (_idact_production == -1) then {
 			_idact_production = player addAction ["<t color='#FF8000'>" + localize "STR_PRODUCTION_ACTION" + "</t>","scripts\client\commander\open_production.sqf","",-998,false,true,"","build_confirmed == 0"];
 		};
@@ -237,7 +240,7 @@ while {true} do {
 			_idact_production = -1;
 		};
 	};
-
+	
 	if (KP_liberation_ailogistics) then {
 		if ((_fobdistance < _distfob) && (player == ([] call F_getCommander) || [] call F_isAdmin) && alive player && vehicle player == player && (((count GRLIB_all_fobs) + (count KP_liberation_production)) > 1)) then {
 			if (_idact_logistic == -1) then {
@@ -273,5 +276,27 @@ while {true} do {
 		};
 	};
 
+	if (!isNil("zeus1")) then {
+		if ((player == zeus1) && (isNull(getAssignedCuratorLogic zeus1))) then {
+			if ( _idact_zeus == -1 ) then {
+				_idact_zeus = player addAction ["<t color='#FF0000'>" + localize "STR_REASSIGN_ZEUS" + "</t>",{[] remoteExec ["zeus_remote_call",2];},"",-1002,false,true,"","build_confirmed == 0"];
+			};
+		} else {
+			player removeAction _idact_zeus;
+			_idact_zeus = -1;
+		};
+	};	
+
+	if (!isNil("zeus2")) then {
+		if ((player == zeus2) && (isNull(getAssignedCuratorLogic zeus2))) then {
+			if ( _idact_zeus == -1 ) then {
+				_idact_zeus = player addAction ["<t color='#FF0000'>" + localize "STR_REASSIGN_ZEUS" + "</t>",{[] remoteExec ["zeus_remote_call",2];},"",-1002,false,true,"","build_confirmed == 0"];
+			};
+		} else {
+			player removeAction _idact_zeus;
+			_idact_zeus = -1;
+		};
+	};
+	
 	uiSleep 1;
 };

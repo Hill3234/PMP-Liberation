@@ -332,8 +332,14 @@ while { true } do {
 					case "Land_Medevac_HQ_V1_F": {_vehicle setVariable ["ace_medical_isMedicalFacility", true, true];};
 					case KP_liberation_recycle_building: {_vehicle setVariable ["ace_isRepairFacility", 1, true];};
 					case "Flag_White_F": {_vehicle setFlagTexture "res\kpflag.jpg";};
+					case "Flag_UNO_F": {_vehicle setFlagTexture "res\a3mc_flag.jpg";};
+					case "Land_Billboard_F": {_vehicle setObjectTextureGlobal [0, "res\ts_billboard.paa"];};
+					case "I_MRAP_03_F": {_vehicle setObjectTextureGlobal [0,"res\kgb_fennek_des.jpg"];};
+					case "I_MRAP_03_hmg_F": {_vehicle setObjectTextureGlobal [0,"res\kgb_fennek_des.jpg"]; _vehicle setObjectTextureGlobal [1,"res\turret_des_new.jpg"];};
+					case "I_MRAP_03_gmg_F": {_vehicle setObjectTextureGlobal [0,"res\kgb_fennek_des.jpg"]; _vehicle setObjectTextureGlobal [1,"res\turret_des_new.jpg"];};					
 					case KP_liberation_small_storage_building;
 					case KP_liberation_large_storage_building: {_vehicle setVariable ["KP_liberation_storage_type", 0, true];};
+					case Arsenal_typename: {[_vehicle, true, [0, 1.5, 0], 0] remoteExec ["ace_dragging_fnc_setDraggable", 0, true];[_vehicle, true, [0, 1.5, 0], 0] remoteExec ["ace_dragging_fnc_setCarryable", 0, true];};
 					default {};
 				};
 

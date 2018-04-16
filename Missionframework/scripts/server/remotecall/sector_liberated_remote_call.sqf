@@ -3,23 +3,23 @@ params ["_liberated_sector"];
 private _combat_readiness_increase = 0;
 
 if (_liberated_sector in sectors_bigtown) then {
-	_combat_readiness_increase = (floor (random 10)) * GRLIB_difficulty_modifier;
+	_combat_readiness_increase = (floor (random 3)) * GRLIB_difficulty_modifier;
 };
 
 if (_liberated_sector in sectors_capture) then {
-	_combat_readiness_increase = (floor (random 6)) * GRLIB_difficulty_modifier;
+	_combat_readiness_increase = (floor (random 2)) * GRLIB_difficulty_modifier;
 };
 
 if (_liberated_sector in sectors_military) then {
-	_combat_readiness_increase = (5 + (floor (random 11))) * GRLIB_difficulty_modifier;
+	_combat_readiness_increase = (5 + (floor (random 5))) * GRLIB_difficulty_modifier;
 };
 
 if (_liberated_sector in sectors_factory) then {
-	_combat_readiness_increase = (3 + (floor (random 7))) * GRLIB_difficulty_modifier;
+	_combat_readiness_increase = (3 + (floor (random 3))) * GRLIB_difficulty_modifier;
 };
 
 if (_liberated_sector in sectors_tower) then {
-	_combat_readiness_increase = (floor (random 4));
+	_combat_readiness_increase = (floor (random 2));
 };
 
 combat_readiness = combat_readiness + _combat_readiness_increase;

@@ -265,6 +265,31 @@ if (!isNil "greuh_liberation_savegame") then {
 				_nextbuilding setFlagTexture "res\kpflag.jpg";
 			};
 
+			if (_nextclass == "Flag_UNO_F") then {
+				_nextbuilding setFlagTexture "res\a3mc_flag.jpg";
+			};			
+			if (_nextclass == "Land_Billboard_F") then {
+				_nextbuilding setObjectTextureGlobal [0, "res\ts_billboard.paa"];
+			};
+			if (_nextclass == "I_MRAP_03_F") then {
+				_nextbuilding setObjectTextureGlobal [0,"res\kgb_fennek_des.jpg"];				
+			};
+
+			if (_nextclass == "I_MRAP_03_hmg_F") then {
+				_nextbuilding setObjectTextureGlobal [0,"res\kgb_fennek_des.jpg"];
+				_nextbuilding setObjectTextureGlobal [1,"res\turret_des_new.jpg"];
+			};
+
+			if (_nextclass == "I_MRAP_03_gmg_F") then {
+				_nextbuilding setObjectTextureGlobal [0,"res\kgb_fennek_des.jpg"];
+				_nextbuilding setObjectTextureGlobal [1,"res\turret_des_new.jpg"];
+			};
+			
+			if (_nextclass == Arsenal_typename) then {
+				[_nextbuilding, true, [0, 1.5, 0], 0] remoteExec ["ace_dragging_fnc_setDraggable", 0, true];
+				[_nextbuilding, true, [0, 1.5, 0], 0] remoteExec ["ace_dragging_fnc_setCarryable", 0, true];
+			};			
+			
 			if !(_nextclass in KP_liberation_ace_crates) then {
 				if(KP_liberation_clear_cargo || !(_nextclass isKindOf "AllVehicles")) then {
 					clearWeaponCargoGlobal _nextbuilding;
@@ -433,7 +458,7 @@ if (!isNil "greuh_liberation_savegame") then {
 
 	{
 		private _nextgroup = _x;
-		private _grp = createGroup [GRLIB_side_friendly, true];
+		private _grp = createGroup GRLIB_side_friendly;
 		{
 			private _nextunit = _x;
 			private _nextpos = [(_nextunit select 1) select 0, (_nextunit select 1) select 1, ((_nextunit select 1) select 2) + 0.2];

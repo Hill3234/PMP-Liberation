@@ -6,6 +6,7 @@ CONFIG FILE FOR KP LIBERATION
 KP_liberation_medical_vehicles = [
 	"B_Truck_01_medical_F",
 	"B_T_Truck_01_medical_F",
+	"Redd_Tank_Fuchs_1A4_San_Tropentarn",
 	"rhsusf_M1085A1P2_B_D_Medical_fmtv_usarmy",
 	"rhsusf_M1085A1P2_B_WD_Medical_fmtv_usarmy",
 	"rhsusf_m113_usarmy_medical",
@@ -16,8 +17,7 @@ KP_liberation_medical_vehicles = [
 	"RHS_UH60M_MEV2",
 	"RHS_UH60M_MEV_d",
 	"RHS_UH60M_MEV2_d",
-	"UK3CB_BAF_LandRover_Amb_FFR_Green_A_MTP",
-	"UK3CB_BAF_LandRover_Amb_FFR_Sand_A_DDPM"
+	"O_T_Truck_03_medical_ghex_F"
 ];
 
 // Classnames of ACE3 crates (which have to be in the unit preset as well).
@@ -48,23 +48,20 @@ KP_liberation_preset_blufor = 0;
 1 = Apex Tanoa (apex vanilla CSAT)
 2 = RHS AFRF (EMR/MSV)
 3 = Project OPFOR (Takistan)
-4 = Project OPFOR (Islamic State)
-5 = Project OPFOR (Sahrani) */
-KP_liberation_preset_opfor = 0;
+4 = Project OPFOR (Islamic State) */
+KP_liberation_preset_opfor = 3;
 
 /* Resistance preset:
 0 = Custom (default vanilla FIA)
 1 = Apex Tanoa (apex vanilla Syndikat)
 2 = RHS GREF
-3 = Project OPFOR (Middle Eastern)
-4 = Project OPFOR (Sahrani) */
-KP_liberation_preset_resistance = 0;
+3 = Project OPFOR (Middle Eastern) */
+KP_liberation_preset_resistance = 2;
 
 /* Civilians preset:
 0 = Custom (default vanilla)
 1 = Apex Tanoa (apex vanilla)
-2 = Project OPFOR (Middle Eastern)
-3 = RDS Civilians */
+2 = Project OPFOR (Middle Eastern) */
 KP_liberation_preset_civilians = 0;
 
 /* Which arsenal preset should be used?
@@ -101,7 +98,7 @@ GRLIB_color_enemy_bright = "ColorRED";																			// Enemy sector marker 
 
 GRLIB_fob_range = 125;																							// Build range around the main FOB building.
 GRLIB_halo_altitude = 2500;																						// Altitude in metres for the HALO jump.
-GRLIB_secondary_missions_costs = [15, 10, 8];																	// Intel price for the secondary missions [FOB hunting, Convoy ambush, SAR].
+GRLIB_secondary_missions_costs = [40, 20, 16];																	// Intel price for the secondary missions [FOB hunting, Convoy ambush, SAR].
 GRLIB_secondary_objective_impact = 0.6;																			// The percentage impact against enemy combat readiness for a successful FOB hunt.
 GRLIB_recycling_percentage = 0.5;																				// Percentage of resources you get back from recycling.
 KP_liberation_production_interval = 30				/ GRLIB_resources_multiplier;								// Time in minutes until a production process is finished, when resources multiplier is set to 1.
@@ -145,7 +142,7 @@ KP_liberation_resistance_tier2 = 30;																			// At which strength (0-1
 KP_liberation_resistance_tier3 = 70;																			// At which strength (0-100) the guerilla forces will be at tier 3?
 KP_liberation_resistance_at_chance = 20;																		// Chance that a guerilla unit has a RPG. (tier 2 and 3)
 KP_liberation_resistance_sector_chance = 35;																	// Chance that a guerilla squad will join an ongoing sector attack.
-KP_liberation_resistance_ambush_chance = 25;																	// Chance that some guerilla units will spawn in blufor sectors for an ambush, if reputation is low.
+KP_liberation_resistance_ambush_chance = 30;																	// Chance that some guerilla units will spawn in blufor sectors for an ambush, if reputation is low.
 
 /* - Default arsenal blacklist method.
 Useless if you're using anything other than "kp_liberation_arsenal = 0;" above. A whitelisted arsenal is always more performance friendly then a blacklisted arsenal.	
@@ -241,7 +238,12 @@ blacklisted_from_arsenal = [
 	"UK3CB_BAF_Tripod",
 	"optic_Nightstalker",
 	"optic_tws",
-	"optic_tws_mg"
+	"optic_tws_mg",
+	"Redd_Milan_Static_Bag",
+	"Redd_Milan_Static_Tripod",
+	"NVGogglesB_blk_F",
+	"NVGogglesB_grn_F",
+	"NVGogglesB_gry_F"
 ];
 
 // Items which should be added as allowed Items, when they get blacklisted, even if they are not in the blacklisted_from_arsenal array
@@ -377,10 +379,14 @@ box_transport_config = [
 	["rhsusf_M1083A1P2_B_D_fmtv_usarmy", -5.0, [0,-0.2,0.45], [0,-1.9,0.45]],
 	["rhsusf_M1083A1P2_WD_flatbed_fmtv_usarmy", -5.0, [0,-0.2,0.45], [0,-1.9,0.45]],
 	["rhsusf_M1083A1P2_B_WD_flatbed_fmtv_usarmy", -5.0, [0,-0.2,0.45], [0,-1.9,0.45]],
-	["rhsusf_M1083A1P2_D_flatbed_fmtv_usarmy", -5.0, [0,-0.2,0.45], [0,-1.9,0.45]],
-	["rhsusf_M1083A1P2_B_D_flatbed_fmtv_usarmy", -5.0, [0,-0.2,0.45], [0,-1.9,0.45]],
+	["rhsusf_M1083A1P2_D_flatbed_fmtv_usarmy", -5.0, [0,-0.2,-0.55], [0,-1.9,-0.55]],
+	["rhsusf_M1083A1P2_B_D_flatbed_fmtv_usarmy", -5.0, [0,-0.2,-0.55], [0,-1.9,-0.55]],
 	["rhsusf_M1083A1P2_B_M2_D_flatbed_fmtv_usarmy", -5.0, [0,-0.2,0.45], [0,-1.9,0.45]],
+	["rhsusf_M1084A1P2_B_D_fmtv_usarmy", -5.0, [0,-0.2,0.45], [0,-1.9,0.45]],
+	["rhsusf_M1084A1R_SOV_M2_D_fmtv_socom", -5.0, [0,-0.2,0.45], [0,-1.9,0.45]],
+	["rhsusf_M1084A1P2_B_M2_D_fmtv_usarmy", -5.0, [0,-0.2,0.45], [0,-1.9,0.45]],
 	["rhsusf_M1083A1P2_B_M2_WD_flatbed_fmtv_usarmy", -5.0, [0,-0.2,0.45], [0,-1.9,0.45]],
+	["RHS_Mi8mt_Cargo_vdv", -6,5, [0,3.6,-1.55], [0,2.1,-1.55], [0,0.6,-1.55]],
 	["rhsusf_CH53E_USMC", -11.0, [0,2.5,1.4], [0,2.5,2.6], [0,1.0,1.4], [0,1.0,2.6], [0,-0.5,1.4], [0,-0.5,2.6], [0,-0.5,1.4], [0,-0.5,2.6], [0,-2.0,1.4], [0,-2.5,2.6], [0,-3.5,1.4], [0,-3.5,2.6]],
 	["rhsusf_CH53E_USMC_D", -11.0, [0,2.5,1.4], [0,2.5,2.6], [0,1.0,1.4], [0,1.0,2.6], [0,-0.5,1.4], [0,-0.5,2.6], [0,-0.5,1.4], [0,-0.5,2.6], [0,-2.0,1.4], [0,-2.5,2.6], [0,-3.5,1.4], [0,-3.5,2.6]],
 	["RHS_C130J", -9.5, [-0.8,4.5,1.9], [0.8,4.5,1.9], [-0.8,4.5,3.1], [0.8,4.5,3.1], [-0.8,3.0,1.9], [0.8,3.0,1.9], [-0.8,3.0,3.1], [0.8,3.0,3.1], [-0.8,2.0,1.9], [0.8,2.0,1.9], [-0.8,2.0,3.1], [0.8,2.0,3.1], [-0.8,1.0,1.9], [0.8,1.0,1.9], [-0.8,1.0,3.1], [0.8,1.0,3.1], [-0.8,0.0,1.9], [0.8,0.0,1.9], [-0.8,0.0,3.1], [0.8,0.0,3.1], [-0.8,-1.0,1.9], [0.8,-1.0,1.9], [-0.8,-1.0,3.1], [0.8,-1.0,3.1]]
@@ -402,7 +408,9 @@ ai_resupply_sources = [
 	"rhsusf_M977A4_AMMO_BKIT_usarmy_wd",
 	"rhsusf_M977A4_AMMO_BKIT_M2_usarmy_d",
 	"rhsusf_M977A4_AMMO_BKIT_M2_usarmy_wd",
-	"rhs_gaz66_ammo_msv"
+	"rhs_gaz66_ammo_msv",
+	"O_T_Truck_03_ammo_ghex_F",
+	"rhsusf_m113d_usarmy_supply"
 ];
 
 // Everything that can resupply other vehicles.
@@ -421,7 +429,8 @@ vehicle_repair_sources = [
 	"rhsusf_M977A4_REPAIR_BKIT_usarmy_wd",
 	"rhsusf_M977A4_REPAIR_BKIT_M2_usarmy_d",
 	"rhsusf_M977A4_REPAIR_BKIT_M2_usarmy_wd",
-	"RHS_Ural_Repair_VDV_01"
+	"RHS_Ural_Repair_VDV_01",
+	"O_T_Truck_03_repair_ghex_F"
 ];
 
 vehicle_rearm_sources = [
@@ -438,7 +447,9 @@ vehicle_rearm_sources = [
 	"rhsusf_M977A4_AMMO_BKIT_usarmy_wd",
 	"rhsusf_M977A4_AMMO_BKIT_M2_usarmy_d",
 	"rhsusf_M977A4_AMMO_BKIT_M2_usarmy_wd",
-	"rhs_gaz66_ammo_msv"
+	"rhs_gaz66_ammo_msv",
+	"O_T_Truck_03_ammo_ghex_F",
+	"rhsusf_m113d_usarmy_supply"
 ];
 
 vehicle_refuel_sources = [
@@ -455,7 +466,8 @@ vehicle_refuel_sources = [
 	"rhsusf_M978A4_usarmy_wd",
 	"rhsusf_M978A4_BKIT_usarmy_d",
 	"rhsusf_M978A4_BKIT_usarmy_wd",
-	"RHS_Ural_Fuel_VDV_01"
+	"RHS_Ural_Fuel_VDV_01",
+	"O_T_Truck_03_fuel_ghex_F"
 ];
 
 // Classnames of boats, so they can be built on water.
