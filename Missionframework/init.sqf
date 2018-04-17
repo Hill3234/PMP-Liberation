@@ -35,7 +35,7 @@ if ((!((player getVariable "bis_revive_ehHandleHeal") >= 0) || isDedicated) && !
 
 //----------------- Vcom AI ----------------//
 
-If (isServer || !(hasinterface) ) then {[] execVM "VCOMAI\init.sqf";};
+//If (isServer || !(hasinterface) ) then {[] execVM "VCOMAI\init.sqf";};
 
 //----------------- injured ----------------//
 inCap = compile preprocessfilelinenumbers "scripts\inCap.sqf";
