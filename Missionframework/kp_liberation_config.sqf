@@ -48,8 +48,9 @@ KP_liberation_preset_blufor = 0;
 1 = Apex Tanoa (apex vanilla CSAT)
 2 = RHS AFRF (EMR/MSV)
 3 = Project OPFOR (Takistan)
-4 = Project OPFOR (Islamic State) */
-KP_liberation_preset_opfor = 3;
+4 = Project OPFOR (Islamic State)
+5 = RHS GREF */
+KP_liberation_preset_opfor = 5;
 
 /* Resistance preset:
 0 = Custom (default vanilla FIA)

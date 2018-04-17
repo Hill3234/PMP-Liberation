@@ -2,7 +2,7 @@
     <img src="https://www.killahpotatoes.de/images/arma/liberation.png" width="500">
 </p>
 <p align="center">
-    <a href="https://github.com/KillahPotatoes/PMP-Liberation/blob/master/LICENSE">
+    <a href="https://github.com/KillahPotatoes/PMP-Liberation/blob/master/LICENSE.md">
         <img src="https://img.shields.io/github/license/KillahPotatoes/PMP-Liberation.svg?style=flat-square" alt="License: MIT">
     </a>
     <a href="https://github.com/KillahPotatoes/PMP-Liberation/issues">
