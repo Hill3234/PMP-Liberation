@@ -28,6 +28,7 @@ private _idxposit = 0;
 	_x createUnit [_sectorpos, _grp];
 	private _nextunit = (units _grp) select ((count (units _grp)) -1);
 	_nextunit addMPEventHandler ["MPKilled", {_this spawn kill_manager}];
+	_nextunit linkItem "NVGoggles_OPFOR";
 	_nextunit setdir (random 360);
 	_nextunit setpos (_buildingpositions select (_position_indexes select _idxposit));
 	[_nextunit, _sector] spawn building_defence_ai;

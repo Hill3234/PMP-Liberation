@@ -49,6 +49,10 @@ while {(count (units _grp) < _amount)} do {
 		_unit addGoggles (selectRandom KP_liberation_guerilla_facegear);
 	};
 
+	if ((_tier == 3) && ((random 100) <= 67)) then {
+		_unit linkItem "NVGoggles_INDEP";
+	};
+
 	_unit addWeapon (_weapon select 0);
 	_unit addPrimaryWeaponItem (_weapon select 3);
 	_unit addPrimaryWeaponItem (_weapon select 4);

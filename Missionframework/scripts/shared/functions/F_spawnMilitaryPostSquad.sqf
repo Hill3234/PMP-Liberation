@@ -13,7 +13,7 @@ if (count _allposts > 0) then {
 		if (random 100 > 60) then {
 			_unitclasspost = opfor_machinegunner;
 		};
-		_unitclasspost createUnit [_squadpos, _grp, "nextunit_post = this; this addMPEventHandler [""MPKilled"", {_this spawn kill_manager}]"];
+		_unitclasspost createUnit [_squadpos, _grp, "nextunit_post = this; this addMPEventHandler [""MPKilled"", {_this spawn kill_manager}]; this linkItem ""NVGoggles_OPFOR"";"];
 		nextunit_post setdir (180 + (getdir _x));
 		nextunit_post setpos (_building_positions select 1);
 
