@@ -82,6 +82,9 @@ execVM "scripts\server\asymmetric\init_module.sqf";
 // Groupcheck for deletion when empty
 execVM "scripts\server\offloading\group_diag.sqf";
 
+// Delete all enemies 400m around the spawn position every 30 seconds.
+execVM "scripts\server\game\savingPrivateRespawn.sqf";
+
 {
 	if ( (_x != player) && (_x distance (getmarkerpos GRLIB_respawn_marker) < 200 ) ) then {
 		deleteVehicle _x;
