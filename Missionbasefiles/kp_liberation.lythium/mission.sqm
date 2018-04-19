@@ -16,11 +16,11 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=53;
+		nextID=55;
 	};
 	class Camera
 	{
-		pos[]={99.686501,167.78871,59.154804};
+		pos[]={102.35578,146.86166,85.938766};
 		dir[]={-0.080608673,-0.92909926,0.36114594};
 		up[]={-0.2023927,0.36988878,0.90676677};
 		aside[]={0.97605252,-2.5287736e-006,0.2178603};
@@ -132,9 +132,8 @@ addons[]=
 	"rhs_sounds",
 	"ace_compat_rhs_afrf3",
 	"rhs_c_troops",
-	"rhssaf_c_gear",
-	"bwa3_headgear",
 	"rhsgref_c_troops",
+	"bwa3_headgear",
 	"acre_api",
 	"A3_Data_F_Curator_Virtual"
 };
@@ -142,7 +141,7 @@ class AddonsMetaData
 {
 	class List
 	{
-		items=71;
+		items=70;
 		class Item0
 		{
 			className="afghan_houses_old";
@@ -432,14 +431,14 @@ class AddonsMetaData
 		class Item46
 		{
 			className="bwa3_units";
-			name="Bundeswehr - Characters and Clothing";
+			name="Bundeswehr - Charaktere und Bekleidungen";
 			author="BW-Mod";
 			url="http://www.bwmod.de/index.php/inhalt/download";
 		};
 		class Item47
 		{
 			className="bwa3_handguns";
-			name="Bundeswehr - Pistols and Submachine Guns";
+			name="Bundeswehr - Pistolen";
 			author="BW-Mod";
 			url="http://www.bwmod.de/index.php/inhalt/download";
 		};
@@ -514,14 +513,14 @@ class AddonsMetaData
 		class Item58
 		{
 			className="bwa3_vests";
-			name="Bundeswehr - Vests";
+			name="Bundeswehr - Westen";
 			author="BW-Mod";
 			url="http://www.bwmod.de/index.php/inhalt/download";
 		};
 		class Item59
 		{
 			className="bwa3_handgrenades";
-			name="Bundeswehr - Hand Grenades";
+			name="Bundeswehr - Handgranaten";
 			author="BW-Mod";
 			url="http://www.bwmod.de/index.php/inhalt/download";
 		};
@@ -569,33 +568,26 @@ class AddonsMetaData
 		};
 		class Item66
 		{
-			className="rhssaf_c_gear";
-			name="RHS: SAF gear configuration";
+			className="rhsgref_c_troops";
+			name="GREF Infantry & Equipment";
 			author="Red Hammer Studios";
 			url="http://www.rhsmods.org/";
 		};
 		class Item67
 		{
 			className="bwa3_headgear";
-			name="Bundeswehr - Hats and Helmets";
+			name="Bundeswehr - Kopfbedeckungen und Helme";
 			author="BW-Mod";
 			url="http://www.bwmod.de/index.php/inhalt/download";
 		};
 		class Item68
-		{
-			className="rhsgref_c_troops";
-			name="GREF Infantry & Equipment";
-			author="Red Hammer Studios";
-			url="http://www.rhsmods.org/";
-		};
-		class Item69
 		{
 			className="acre_api";
 			name="ACRE2 - API";
 			author="ACRE2Team";
 			url="https://github.com/IDI-Systems/acre2";
 		};
-		class Item70
+		class Item69
 		{
 			className="A3_Data_F_Curator";
 			name="Arma 3 Zeus Update - Main Configuration";
@@ -32522,7 +32514,7 @@ class Mission
 						class Attribute0
 						{
 							property="ace_isMedic";
-							expression="if (_value > -1) then {_this setVariable [""ace_medical_medicClass"",_value,true];};";
+							expression="if (_value > -1) then {_this setVariable [""ace_medical_medicClass"", _value, true];};";
 							class Value
 							{
 								class data
@@ -33949,7 +33941,7 @@ class Mission
 						class Attribute0
 						{
 							property="ace_isMedic";
-							expression="if (_value > -1) then {_this setVariable [""ace_medical_medicClass"",_value,true];};";
+							expression="if (_value > -1) then {_this setVariable [""ace_medical_medicClass"", _value, true];};";
 							class Value
 							{
 								class data
@@ -35474,7 +35466,7 @@ class Mission
 						class Attribute0
 						{
 							property="ace_isMedic";
-							expression="if (_value > -1) then {_this setVariable [""ace_medical_medicClass"",_value,true];};";
+							expression="if (_value > -1) then {_this setVariable [""ace_medical_medicClass"", _value, true];};";
 							class Value
 							{
 								class data
@@ -36950,7 +36942,7 @@ class Mission
 						class Attribute0
 						{
 							property="ace_isMedic";
-							expression="if (_value > -1) then {_this setVariable [""ace_medical_medicClass"",_value,true];};";
+							expression="if (_value > -1) then {_this setVariable [""ace_medical_medicClass"", _value, true];};";
 							class Value
 							{
 								class data
@@ -37898,7 +37890,7 @@ class Mission
 							};
 							class uniform
 							{
-								typeName="rhssaf_uniform_m10_digital_desert";
+								typeName="rhsgref_uniform_para_ttsko_mountain";
 								isBackpack=0;
 								class ItemCargo
 								{
@@ -38064,7 +38056,7 @@ class Mission
 							};
 							class uniform
 							{
-								typeName="rhssaf_uniform_m10_digital_desert";
+								typeName="rhsgref_uniform_para_ttsko_mountain";
 								isBackpack=0;
 								class ItemCargo
 								{
@@ -41904,7 +41896,7 @@ class Mission
 						class Attribute0
 						{
 							property="ace_isMedic";
-							expression="if (_value > -1) then {_this setVariable [""ace_medical_medicClass"",_value,true];};";
+							expression="if (_value > -1) then {_this setVariable [""ace_medical_medicClass"", _value, true];};";
 							class Value
 							{
 								class data
@@ -42092,7 +42084,7 @@ class Mission
 						class Attribute0
 						{
 							property="ace_isMedic";
-							expression="if (_value > -1) then {_this setVariable [""ace_medical_medicClass"",_value,true];};";
+							expression="if (_value > -1) then {_this setVariable [""ace_medical_medicClass"", _value, true];};";
 							class Value
 							{
 								class data
