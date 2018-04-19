@@ -97,9 +97,9 @@ KP_liberation_guerilla_uniforms_2 = [
 KP_liberation_guerilla_uniforms_3 = [
 	"rhsgref_uniform_reed",
 	"rhsgref_uniform_woodland_olive",
-	"rhsgref_uniform_flecktarn",
+	"rhsgref_uniform_tigerstripe",
 	"rhsgref_uniform_altis_lizard_olive",
-	"rhsgref_uniform_dpm_olive"
+	"rhsgref_uniform_3color_desert"
 ];
 
 // Vests
