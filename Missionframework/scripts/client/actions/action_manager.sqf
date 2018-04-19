@@ -147,7 +147,7 @@ while {true} do {
 		};
 	};
 
-	if ((count GRLIB_all_fobs > 0) && (GRLIB_endgame == 0) && (_fobdistance < _distredeploy || (player distance startbase) < 200) && alive player && vehicle player == player && (((player == ([] call F_getCommander) || [] call F_isAdmin))) then {
+	if ((count GRLIB_all_fobs > 0) && (GRLIB_endgame == 0) && (_fobdistance < _distredeploy || (player distance startbase) < 200) && alive player && vehicle player == player && (((str player) in KPLIB_rightAll) || [] call F_isAdmin)) then {
 		if (_idact_secondary == -1) then {
 			_idact_secondary = player addAction ["<t color='#FFFF00'>" + localize "STR_SECONDARY_OBJECTIVES" + "</t>","scripts\client\ui\secondary_ui.sqf","",-992,false,true,"","build_confirmed == 0"];
 		};
