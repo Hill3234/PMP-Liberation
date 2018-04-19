@@ -288,8 +288,52 @@ if (!isNil "greuh_liberation_savegame") then {
 			if (_nextclass == Arsenal_typename) then {
 				[_nextbuilding, true, [0, 1.5, 0], 0] remoteExec ["ace_dragging_fnc_setDraggable", 0, true];
 				[_nextbuilding, true, [0, 1.5, 0], 0] remoteExec ["ace_dragging_fnc_setCarryable", 0, true];
-			};			
+			};
 			
+			if (_nextclass == "rhs_t90a_tv") then {
+                [_nextbuilding,["rhs_Sand",1]] call BIS_fnc_initVehicle;
+            };
+			
+			if (_nextclass == "rhs_btr80a_vdv") then {
+                [_nextbuilding,["rhs_Sand",1]] call BIS_fnc_initVehicle;
+            };
+
+			if (_nextclass == "rhs_bmd2m") then {
+                [_nextbuilding,["Desert",1]] call BIS_fnc_initVehicle;
+            };
+
+			if (_nextclass == "rhs_bmd2k") then {
+                [_nextbuilding,["Desert",1]] call BIS_fnc_initVehicle;
+            };
+
+			if (_nextclass == "rhs_bmp2_vdv") then {
+                [_nextbuilding,["rhs_Sand",1]] call BIS_fnc_initVehicle;
+            };
+
+			if (_nextclass == "rhs_bmp3mera_msv") then {
+                [_nextbuilding,["rhs_Sand",1]] call BIS_fnc_initVehicle;
+            };
+
+			if (_nextclass == "rhs_2s3_tv") then {
+                [_nextbuilding,["rhs_Sand",1]] call BIS_fnc_initVehicle;
+            };
+
+			if (_nextclass == "rhs_t72bd_tv") then {
+                [_nextbuilding,["rhs_Sand",1]] call BIS_fnc_initVehicle;
+            };
+
+			if (_nextclass == "rhs_zsu234_aa") then {
+                [_nextbuilding,["rhs_Sand",1]] call BIS_fnc_initVehicle;
+            };
+
+			if (_nextclass == "rhs_t80um") then {
+                [_nextbuilding,["tricolor",1]] call BIS_fnc_initVehicle;
+            };
+
+			if (_nextclass == "rhs_uaz_vdv") then {
+                [_nextbuilding,["Camo3",1]] call BIS_fnc_initVehicle;
+            };
+
 			if !(_nextclass in KP_liberation_ace_crates) then {
 				if(KP_liberation_clear_cargo || !(_nextclass isKindOf "AllVehicles")) then {
 					clearWeaponCargoGlobal _nextbuilding;

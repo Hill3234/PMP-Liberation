@@ -340,6 +340,18 @@ while { true } do {
 					case KP_liberation_small_storage_building;
 					case KP_liberation_large_storage_building: {_vehicle setVariable ["KP_liberation_storage_type", 0, true];};
 					case Arsenal_typename: {[_vehicle, true, [0, 1.5, 0], 0] remoteExec ["ace_dragging_fnc_setDraggable", 0, true];[_vehicle, true, [0, 1.5, 0], 0] remoteExec ["ace_dragging_fnc_setCarryable", 0, true];};
+					case "rhs_t90a_tv": {[_vehicle,["rhs_Sand",1]] call BIS_fnc_initVehicle;};
+					case "RHS_BM21_VDV_01": {[_vehicle,["rhs_Sand",1]] call BIS_fnc_initVehicle;};
+					case "rhs_btr80a_vdv": {[_vehicle,["rhs_Sand",1]] call BIS_fnc_initVehicle;};
+					case "rhs_bmd2m": {[_vehicle,["Desert",1]] call BIS_fnc_initVehicle;};
+					case "rhs_bmd2k": {[_vehicle,["Desert",1]] call BIS_fnc_initVehicle;};
+					case "rhs_bmp2_vdv": {[_vehicle,["rhs_Sand",1]] call BIS_fnc_initVehicle;};
+					case "rhs_bmp3mera_msv": {[_vehicle,["rhs_Sand",1]] call BIS_fnc_initVehicle;};
+					case "rhs_2s3_tv": {[_vehicle,["rhs_Sand",1]] call BIS_fnc_initVehicle;};
+					case "rhs_t72bd_tv": {[_vehicle,["rhs_Sand",1]] call BIS_fnc_initVehicle;};
+					case "rhs_zsu234_aa": {[_vehicle,["rhs_Sand",1]] call BIS_fnc_initVehicle;};
+					case "rhs_t80um": {[_vehicle,["tricolor",1]] call BIS_fnc_initVehicle;};
+					case "rhs_uaz_vdv": {[_vehicle,["Camo3",1]] call BIS_fnc_initVehicle;};
 					default {};
 				};
 
