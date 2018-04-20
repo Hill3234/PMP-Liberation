@@ -20,7 +20,7 @@
 
 [Discord](https://discord.gg/0remE88d4aRwCaNj)
 
-Hier findet ihr die Dateien zu unserer Liberation Version, angepasst auf die Community.
+Hier findet ihr die Dateien zu unserer Liberation Version, angepasst auf die PMP Community.
 
 Original Beschreibung:
 
@@ -39,31 +39,39 @@ The area has fallen to the enemy, and it is up to you to take it back. Embark on
 
 ## Public Server
 
-### [GER] Public MilSim Project Server
+### [GER] PMP Public MilSim Project Server #1
 
-* IP: 213.133.110.170
-* Port: 2322
+* IP: 195.201.164.37
+* Port: 2312
 * Benötigte Mods:
     * [3CB BAF Weapons](http://steamcommunity.com/sharedfiles/filedetails/?id=893339590)
     * [3CB BAF Weapons ACE Compat](http://steamcommunity.com/sharedfiles/filedetails/?id=1325185263)
     * [ACE3](http://steamcommunity.com/sharedfiles/filedetails/?id=463939057)
     * [ACRE2](http://steamcommunity.com/sharedfiles/filedetails/?id=751965892)
     * [ADV ACE CPR](http://steamcommunity.com/sharedfiles/filedetails/?id=1104460924)
-    * [BW Kleiderkammer](http://steamcommunity.com/sharedfiles/filedetails/?id=835394852)
     * [BWMod](http://steamcommunity.com/sharedfiles/filedetails/?id=1200127537)
     * [BWMod ACE Compat](http://steamcommunity.com/sharedfiles/filedetails/?id=1200145989)
     * [CBA A3](http://steamcommunity.com/sharedfiles/filedetails/?id=450814997)
-    * [KP Ranks](http://steamcommunity.com/sharedfiles/filedetails/?id=741621641)
+    * [Enhanced Movement](http://steamcommunity.com/sharedfiles/filedetails/?id=333310405)
+    * [F-14 Tomcat](https://steamcommunity.com/sharedfiles/filedetails/?id=537154025)
+    * [F-15 Eagle](https://steamcommunity.com/sharedfiles/filedetails/?id=582478120)
+    * [F-16 Fighting Falcon](https://steamcommunity.com/sharedf)
+    * [FIR AWS](https://steamcommunity.com/sharedfiles/filedetails/?id)
+    * [JBAD Lythium](https://steamcommunity.com/sharedfiles/filedetails/?id=520618345)
+    * [Lythium](https://steamcommunity.com/sharedfiles/filedetails/?id=909547724)
     * [Military Gear Pack](http://steamcommunity.com/sharedfiles/filedetails/?id=736829758)
-    * [Project Opfor](http://steamcommunity.com/sharedfiles/filedetails/?id=735566597)
     * [Redd'n'Tank Vehicles](http://steamcommunity.com/sharedfiles/filedetails/?id=1128145626)
     * [RHSAFRF](http://steamcommunity.com/sharedfiles/filedetails/?id=843425103)
     * [RHSAFRF ACE Compat](http://steamcommunity.com/sharedfiles/filedetails/?id=773131200)
     * [RHSGREF](http://steamcommunity.com/workshop/filedetails/?id=843593391)
     * [RHSGREF ACE Compat](http://steamcommunity.com/sharedfiles/filedetails/?id=884966711)
-    * [RHSSAF](http://steamcommunity.com/sharedfiles/filedetails/?id=843632231)
     * [RHSUSAF](http://steamcommunity.com/sharedfiles/filedetails/?id=843577117)
     * [RHSUSAF ACE compat](http://steamcommunity.com/sharedfiles/filedetails/?id=773125288)
+* Serverside Mods
+    * [Advanced Rappeling](https://steamcommunity.com/sharedfiles/filedetails/?id=713709341)
+    * [Advanced Sling Loading](https://steamcommunity.com/sharedfiles/filedetails/?id=615007497)
+    * [Advanced Towing](https://steamcommunity.com/sharedfiles/filedetails/?id=639837898)
 * Optionale Mods
+    * [Achilles](https://steamcommunity.com/sharedfiles/filedetails/?id=723217262)
     * [DynaSound 2](http://steamcommunity.com/sharedfiles/filedetails/?id=825181638)
-    * [Enhanced Movement](http://steamcommunity.com/sharedfiles/filedetails/?id=333310405)
+    * [ZEC](https://steamcommunity.com/sharedfiles/filedetails/?id=642912021)
