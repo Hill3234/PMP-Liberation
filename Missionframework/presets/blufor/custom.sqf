@@ -213,7 +213,7 @@ air_vehicles = [
 	["RHS_Ka52_vvsc",500,500,200],										//Ka-52
 	["RHS_Su25SM_vvsc",900,900,400],									//Su-25
 	["rhs_mig29sm_vvsc",1250,1250,450],									//MiG-29SM
-	["RHS_T50_vvs_blueonblue",1500,1750,500]							//T-50 obr. 2013 (055)
+	["RHS_T50_vvs_blueonblue",1500,1750,500],							//T-50 obr. 2013 (055)
 	//FIR
 	["FIR_F14D_VF31CAG",2300,2000,450],									//F14D
 	["FIR_F15E_SJ_336",2300,2000,450],									//F15E
@@ -377,7 +377,7 @@ support_vehicles = [
 	["O_T_Truck_03_repair_ghex_F",350,0,100],							//Typhoon Instandsetzung
 	["O_T_Truck_03_ammo_ghex_F",150,200,100],							//Typhoon Munition
 	["O_T_Truck_03_fuel_ghex_F",150,0,300],								//Typhoon Treibstoff
-	["O_T_Truck_03_medical_ghex_F",150,0,100]							//Typhoon Sanit�ter
+	["O_T_Truck_03_medical_ghex_F",150,0,100],							//Typhoon Sanit�ter
 	//FIR
 	["FIR_Baseplate",100,100,100]										//Missile Carrier
 ];
