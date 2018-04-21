@@ -265,9 +265,9 @@ if (!isNil "greuh_liberation_savegame") then {
 				_nextbuilding setFlagTexture "res\kpflag.jpg";
 			};
 
-			if (_nextclass == "Flag_UNO_F") then {
-				_nextbuilding setFlagTexture "res\a3mc_flag.jpg";
-			};			
+//			if (_nextclass == "Flag_UNO_F") then {
+//				_nextbuilding setFlagTexture "res\a3mc_flag.jpg";
+//			};			
 			if (_nextclass == "Land_Billboard_F") then {
 				_nextbuilding setObjectTextureGlobal [0, "res\ts_billboard.paa"];
 			};
