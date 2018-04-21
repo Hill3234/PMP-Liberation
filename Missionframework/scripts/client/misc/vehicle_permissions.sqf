@@ -18,7 +18,7 @@ while {true} do {
 			hint localize "STR_PERMISSION_NO_ARMOR";
 		};
 	} else {
-		if (((vehicle player) isKindOf "Air") && !((typeOf (vehicle player)) == huron_typename)) then {
+		if (((vehicle player) isKindOf "Air") && !((typeOf (vehicle player)) in PMP_freeHelicopter)) then {
 			if (!((str player) in KPLIB_rightAir)) then {
 				_doeject = true;
 				hint localize "STR_PERMISSION_NO_AIR";
