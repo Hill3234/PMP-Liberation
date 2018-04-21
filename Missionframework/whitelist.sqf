@@ -155,3 +155,15 @@ KPLIB_rightZeus = [
 	"zeus1",
 	"zeus2"
 ];
+
+PMP_freeHelicopter = [
+	huron_typename,
+	KP_liberation_little_bird_classname
+];
+
+PMP_rightfreeHelicopter = [
+	"logistic1",
+	"logistic2",
+	"logistic3",
+	"logistic4"
+];
