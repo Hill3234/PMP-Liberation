@@ -38,7 +38,7 @@ if ((!((player getVariable "bis_revive_ehHandleHeal") >= 0) || isDedicated) && !
 //If (isServer || !(hasinterface) ) then {[] execVM "VCOMAI\init.sqf";};
 
 //----------------- injured ----------------//
-inCap = compile preprocessfilelinenumbers "scripts\inCap.sqf";
+//inCap = compile preprocessfilelinenumbers "scripts\inCap.sqf";
 
 /*//parameters
 _this select 0, true or false, ais war voices,ais will talk with radio or yelling while firing, (default = true)
@@ -49,4 +49,4 @@ _this select 4, hit react chance, determine chance unit have react animation if 
 *** Important Note: if you increase hit react chance, it also decrease unconscious and drag chance ***
 */
 
-_null = [true, true, true, 90, 20] execvm "scripts\injured.sqf";
+//_null = [true, true, true, 90, 20] execvm "scripts\injured.sqf";
